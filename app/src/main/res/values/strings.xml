@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Polonia</string>
+    <string name="height">Altura</string>
+    <string name="Your_result">Tu Resultado</string>
+
+    <!-- Home App -->
+    <string name="Title_Home">Bienvenidos</string>
+    <string name="Category_Home">Categorias</string>
+</resources>

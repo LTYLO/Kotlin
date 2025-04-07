@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Firts_App.homeActivity"
+    android:paddingVertical="92dp"
+    android:paddingHorizontal="16dp"
+    android:background="@color/background_app"
+    android:orientation="vertical">
+
+    <!-- Texto Principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Title_Home"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:layout_gravity="center">
+    </TextView>
+
+    <!-- Categoria -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Category_Home"
+        android:textColor="#4CAF50"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp">
+
+    </TextView>
+
+    <!-- Reycler View -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvCategories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- Tareas -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tareas"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginStart="20dp">
+    </TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcViewVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

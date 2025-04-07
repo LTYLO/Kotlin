@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".Firts_App.Netflix.NetflixActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        app:cardBackgroundColor="#121212"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Boton Home -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnhome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/casa"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="43dp"
+            android:layout_marginTop="58dp"
+            android:text="Inicio"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <!-- Boton Juegos -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnmando"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/mando">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="58dp"
+            android:text="Juegos"
+            android:textColor="@color/white"
+            android:textStyle="bold"></TextView>
+
+        <!-- Boton Nuevo -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bntplayer"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="240dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/playafter"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="214dp"
+            android:layout_marginTop="60dp"
+            android:text="Nuevo y Popular"
+            android:textColor="@color/white"
+            android:textStyle="bold"></TextView>
+
+        <!-- Boton Usuario -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnuser"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/userbefore"></androidx.appcompat.widget.AppCompatButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="354dp"
+            android:layout_marginTop="54dp"
+            android:text="Mi netflix"
+            android:textColor="@color/white"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <!-- view Punto Rojo -->
+
+        <View
+            android:id="@+id/punter"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginStart="378dp"
+            android:layout_marginTop="74dp"
+            tools:background="@drawable/btn18">
+
+        </View>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logonetflix"></ImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/descargar">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+
+    <!-- Boton de Busqueda -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="345dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/busqueda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="194dp"
+            android:text="Los más buscados"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:text="Solo en NETFLIX"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuestra selección de hoy para ti"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_marginTop="220dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <!-- RecyclerView Lo más buscado -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcViewMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- RecyclerView Solo en Netflx -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcOnly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="80dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <!-- RecyclerView Preferencias -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rcOnly"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="50dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

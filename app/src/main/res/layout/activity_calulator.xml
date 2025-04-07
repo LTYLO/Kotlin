@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0EDEBEB"
+    tools:context=".Firts_App.CalulatorActivity">
+
+    <!-- Boton Imagen-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/imagen"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="770dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/btn4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:backgroundTint="@null"
+        android:backgroundTintMode="multiply">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Cero -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/cero"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="770dp"
+        android:layout_marginEnd="210dp"
+        android:background="@drawable/btn3"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imagen"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Punto -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/punto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="770dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cero"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="."
+        android:textSize="60sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Igual -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/igual"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="770dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/punto"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!--Boton Uno-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/uno"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/imagen"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="1"
+        android:textSize="60sp"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton dos -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dos"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="210dp"
+        android:background="@drawable/btn3"
+        android:text="2"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/cero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uno"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton 3 -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/tres"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/btn3"
+        android:text="3"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/punto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/dos"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton suma -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/suma"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn6"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/igual"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tres"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!--Boton Cuatro-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Cuatro"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/uno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="4"
+        android:textSize="60sp"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!--Boton Cinco-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Cinco"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginEnd="210dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/dos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Cuatro"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="5"
+        android:textSize="60sp"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!--Boton Seis-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/seis"
+        android:layout_width="80dp"
+        android:layout_marginTop="650dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/tres"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Cinco"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="6"
+        android:textSize="60sp"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!--Boton Menos-->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Menos"
+        android:layout_width="80dp"
+        android:layout_marginTop="650dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn7"
+        app:layout_constraintBottom_toTopOf="@+id/suma"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/seis"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton siete -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/siete"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/Cuatro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="7"
+        android:textSize="60sp"
+        android:gravity="center" >
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Ocho -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ocho"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="210dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/Cinco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/siete"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="8"
+        android:textSize="60sp"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Nueve -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/nueve"
+        android:layout_width="52dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/btn3"
+        android:gravity="center"
+        android:text="9"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toTopOf="@+id/seis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ocho"
+        app:layout_constraintTop_toTopOf="parent"></androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton multiplicacion -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/multiplicacion"
+        android:layout_width="80dp"
+        android:layout_marginTop="560dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn8"
+        app:layout_constraintBottom_toTopOf="@+id/Menos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/nueve"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Ac -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ac"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="300dp"
+        android:background="@drawable/btn3"
+        app:layout_constraintBottom_toTopOf="@+id/siete"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="AC"
+        android:textSize="40sp"
+        android:textColor="#E77F10"
+        android:gravity="center" >
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Borrar -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/borrar"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="210dp"
+        android:background="@drawable/btn9"
+        app:layout_constraintBottom_toTopOf="@+id/ocho"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ac"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Porcentaje -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/porcentaje"
+        android:layout_width="80dp"
+        android:layout_marginTop="470dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/btn10"
+        app:layout_constraintBottom_toTopOf="@+id/nueve"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/borrar"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <!-- Boton Division -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/division"
+        android:layout_width="80dp"
+        android:layout_marginTop="470dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/btn11"
+        app:layout_constraintBottom_toTopOf="@+id/multiplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/porcentaje"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="1.0">
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <LinearLayout
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginBottom="120dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginStart="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:text="2324234233"
+            android:gravity="end|bottom"
+            android:textSize="40sp"
+            android:textColor="@color/black">
+        </TextView>
+
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

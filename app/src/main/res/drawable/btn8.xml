@@ -1,0 +1,16 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <corners android:radius="15dp"/>
+        <solid android:color="@color/white"/>
+    </shape>
+</item>
+    <item>
+        <bitmap
+            android:src="@drawable/multiplicacion"
+            android:gravity="center"
+            />
+
+
+    </item>
+</layer-list>
